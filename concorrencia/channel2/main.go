@@ -28,5 +28,6 @@ func main() {
 	a, b := <-c, <-c // Recebendo os dados do canal
 	fmt.Println(a, b)
 
+	// aqui ele recebe o 4 * 2 e libera o canal
 	fmt.Println(<-c)
 }
